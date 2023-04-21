@@ -20,9 +20,14 @@ body{
     width: 100%; 
     height: auto; 
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 20px;
+}
 .navbar img {
-    padding-left: 6rem;
-    margin-top: 28px;
+    padding-left: 4rem;
+    float: left;
 }
 .navbar .fa {
   float: right;
@@ -39,7 +44,8 @@ body{
   line-height: 125%;
   margin: 20px 50px;
   font-family: 'Work Sans', sans-serif;
-  font-weight:400;    
+  font-weight:400;
+  font-style: normal;    
 }
 .navbar ul li {
   display: inline-block; 
@@ -61,12 +67,13 @@ input[type="checkbox"] {
 }
   /*---about---*/
   .about h2 {
-    letter-spacing: 6px;
-    font-size: 14px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    font-weight: 700;
     color: #74C69d;
     text-align: center;
+    line-height: 20px;
     margin-top: 32px;
 }
 .about h1 { 
@@ -75,7 +82,7 @@ input[type="checkbox"] {
     font-weight: 700;
     text-align: center;
     color: black;  
-    margin-top: 1.5rem; 
+    margin-top: 1rem; 
 }
 .about p {
     font-size: 20px;
@@ -84,16 +91,19 @@ input[type="checkbox"] {
     text-align: center;
     line-height: 2.5rem;
     color: black;
-    margin:1.5rem 2rem;
+    margin:1rem 2rem 2rem;
+    font-style: normal;
 }
 .bg-image {
     text-align: center;
 }
 .bg-image img {
+    width: 570px;
+    height: auto;
     justify-content: space-between;
     text-align: center;
     margin: 25px 25px;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 .button {
     text-align: center;
@@ -102,14 +112,16 @@ input[type="checkbox"] {
     width: 170px;
     height: 48px;
     text-align: center;
-    padding: 6px;
     background: #212529;
-    color: white;
+    color: rgba(255, 255, 255, 1);
     font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-family: 'Work Sans';
     margin: 2rem 0;
+    padding: 13px 0px;
     border-radius: 5px;
-    cursor: pointer;    
+    cursor: pointer;
+    overflow-y: hidden;   
 }
 footer {
   background-color: #74C69d;
@@ -117,9 +129,9 @@ footer {
   height: auto;
 }
 footer .row {
-  justify-content: space-evenly;
+  justify-content: space-between;
   display: flex;
-  margin: 2rem 2rem;
+  margin: 3rem 4rem;
 }
 footer .icons {
   margin-right: 30%;
@@ -137,37 +149,105 @@ footer p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  letter-spacing: normal;
+  letter-spacing: normal; 
   cursor: pointer;
 } 
 
 /*---header---*/
-@media only screen and (max-width:992px) {
+@media only screen and (max-width: 992px) {
   .navbar .menu-btn i {
       display: inline-block;
-      padding-right: 20px;
+      padding-right: 10px;
       font-size: 35px;
       font-weight: 100;
-      margin:30px 0px;
+      margin: 30px 10px;
       cursor: pointer;
   }
   .navbar ul {
       display: none;
   }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+  }
   .navbar img {
       width: 140px;
       padding-left: 1rem;
-      margin-top: 30px;   
+        
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+  }
+  .navbar img {
+      width: 140px;
+      padding-left: 1rem;
+        
   }
 }
 /*----bg-img---*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .about h2 {
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    color: #74C69d;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 32px;
+}
+.about h1 { 
+    font-family:'Crimson Text', serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: black;  
+    margin-top: 1rem; 
+}
+.about p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    line-height: 125%;
+    color: black;
+    margin:1rem 2rem 2rem;
+    font-style: normal;
+}
   .bg-image img {
-    width: 336px;
+    text-align: center;
+    width: 335px;
     height: auto;
   }
+  .button {
+    text-align: center;
+}
+.button .btn {
+    width: 170px;
+    height: 48px;
+    text-align: center;
+    background: #212529;
+    color:solid #ffff;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 2rem 0;
+    padding: 13px 10px 29.5px ;
+    border-radius: 5px;
+    cursor: pointer; 
+    overflow-y: hidden;   
+}
 }
 @media only screen and (min-width: 768px) {
   .bg-image img {
@@ -250,7 +330,7 @@ footer p {
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     letter-spacing: normal;
 }
@@ -265,28 +345,24 @@ footer p {
   }
   footer .row {
     flex-direction: column;
+    margin: 1rem 0;  
   }
   footer .icons {
-    margin: 2rem 1rem;
+      margin: 1rem 1rem;
       text-align: center;
   }
   footer .icons .fa {
       color: aliceblue;
       justify-content: center;   
       padding-left: 17px;
-      font-size: 18px;
+      font-size: 20px;
   }
   footer .copyright {
       margin: auto;
       text-align: center;   
   }
   footer p {
-      color: rgb(243, 239, 239);
-      text-align: center;
-      font-family: 'Work Sans', sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 17px;
+      font-size: 20px;
       letter-spacing: normal;
       flex: none;   
   }
