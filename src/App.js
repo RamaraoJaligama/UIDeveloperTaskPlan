@@ -1,39 +1,26 @@
-import React from "react";
-import Navbar from './navbar';
-import Data from './data';
-import Class from './class';
-import Arrow from './arrow';
-import Variable from './variable';
-import logo from './logo.svg';
+import './App.css';
+import Navbar from './Components/navbar';
+import Cards from './Components/cards';
+import Footer from './Components/footer';
 
-const App = () => {
-	const options = ['One', 'Two', 'Three', '243', 'Five'];
-	const onOptionChangeHandler = (event) => {
-		console.log("User Selected Value - ", event.target.value)
-	}  
-	return (
-		<>
-		<Navbar/>
-			<center className="main">
-                <img src={logo} className="app-logo" alt="logo"/>
-				<h1>React Environment</h1>
-				<h3>HTML select tag </h3>
-				<select onChange={onOptionChangeHandler}>
-
-					<option>Please choose one option</option>
-					{options.map((option, index) => {
-						return <option key={index} >
-							{option}
-						</option>									
-					})}					
-				</select>
-                <Arrow/>
-                <Variable color="Red"/>	
-				<Data/>
-                <Class/>                              	
-    			</center>                     
-		</>	       
-	);
-};
+function App() {
+  return (
+    <>
+    <div className="App">
+    <div className="container">
+      <Navbar/>
+      <div className='main'>
+        <h2>plans</h2>
+        <h1>Our Services</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur<br/>adipisicing elit.</p>
+        <Cards/>
+      </div>
+      <Footer/>    
+    </div>
+    </div>
+    </>
+   
+  );
+}
 
 export default App;
