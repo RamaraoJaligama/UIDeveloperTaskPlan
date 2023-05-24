@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:wght@400;700&display=swap');
+
+$Primary: #74C69D;
+$PrimaryFont:Crimson Text;
+$SeconderyFont: 'Work Sans'; 
+$Secondery: #000000;
+$FontSize: 20px; 
+$Color: #ffffff;
+$small:600px;
+$medium: 768px;
+$large: 998px;
+
+.container { 
+    margin: auto;
+    min-width: 300px; 
+    max-width: 1500px;
+    overflow-x: hidden;
+  }
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0rem;
+    background-color: $Primary;
+    h1 {
+      color: #ffffff;
+      margin: 1rem 2rem;
+    }
+    span {
+      color: #000000;
+    }
+    ul {
+      float: right;   
+      margin: 1rem 6rem;
+    }
+    li {
+      color: $Color;
+      font-size: 16px;
+      font-weight: 400;
+      display: inline-block;
+      margin: 1rem 1rem;
+      font-family: $SeconderyFont;
+      cursor: pointer;
+    }
+    .menu {
+     width: 24px;
+     height: 20px;
+     position: relative;
+     margin: 2rem 2rem;
+     float: right;
+     color: $Color;
+     display: none;
+    }
+  }
+  .logo {
+    height: 50px;
+    margin: auto 4rem;
+  }
+  
+  .main{
+    margin: 2rem 0;
+    text-align: center;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 1rem auto;
+      font-family: Crimson Text;
+      line-height: 50px;
+    }
+    h2 {
+      color: $Primary;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: $FontSize;
+      margin: 1.5rem 0rem;
+      font-family: $SeconderyFont;
+      line-height: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: $large){
+    .display {
+      ul {
+        display: none;
+      }
+      img.menu {
+        display:block;
+       }
+      .logo {
+        height: 40px;
+        margin: 1rem 1.2rem;
+      }   
+    }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    .icons {
+       color: #ffffff;
+       margin: 1rem 0rem 0rem 0rem;
+    }
+    .fa{
+      padding: 5px 10px;
+      width: 26px;
+      height: auto;
+    }
+    p {
+      font-size: 20px;
+      margin: 0;
+      font-family: $SeconderyFont;
+    }
+  } 
+  }
+  @media only screen and (max-width: $medium){
+    .display {
+      ul {
+        display: none;
+      }
+      img.menu {
+        display: block;
+       }
+      .logo {
+        height: 40px;
+        margin: 1rem 1.2rem;
+      }   
+    }
+    .main {
+        text-align: center;
+        h1{
+            font-size: 24px;
+        }
+    }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    .icons {
+       color: #ffffff;
+       margin: 1rem 0rem 0rem 0rem;
+    }
+    .fa{
+      padding: 5px 10px;
+      width: 26px;
+      height: auto;
+    }
+    p {
+      font-size: 20px;
+      margin: 0;
+      font-family: $SeconderyFont;
+    }
+  } 
+  }
+  
+  
+

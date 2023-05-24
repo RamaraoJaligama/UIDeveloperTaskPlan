@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:wght@400;700&display=swap');
+
+$border-radius: 5px;
+$border:1px solid rgba(0, 0, 0, 1);
+$FontSize : 20px;
+$FontWeight: 400;
+$FontFamily: 'Work Sans';
+$small:600px;
+$medium: 768px;
+$large: 998px;
+.form {
+    width: 50%;
+    align-items: center;
+    padding: 0px 10px 0px 80px;
+    margin: auto;
+    label {
+        font-size: $FontSize;
+        font-weight: $FontWeight;
+        font-family: $FontFamily;
+        color: #000000;
+        text-align: start;
+        padding: 1px 0px;
+        text-transform: capitalize;
+    }
+    input {
+        margin: 20px 0px;
+        width: 575px;
+        height: 38px; 
+        background-color: #EEEEEE;
+        border-radius: $border-radius;
+    }
+    .btn {
+        width: 575px;
+        height: 48px; 
+        border-radius: $border-radius;
+        background-color: #212529;
+        color: #FFFFFF;
+        font-size: $FontSize;
+        font-family: $FontFamily;
+        text-transform: capitalize;
+      }
+  }
+  .map {
+    margin-right: 80px;
+  }
+
+  @media only screen and (max-width: $small){
+    .container {  
+      margin: auto;
+      min-width: 300px; 
+      max-width: 1500px;
+      overflow-x: hidden;
+    }
+    .loginForm {
+      flex-direction: column-reverse;
+      margin: auto;
+      left: 0;
+      .map {
+        width: 335px;
+        height: 224px;
+        padding:0%;
+        margin: auto;
+      }
+      .form {
+        width: 50%;
+        align-items: flex-start;
+        padding: 0%;
+        margin: auto;
+        input {
+            max-width: auto;
+            height: 38px; 
+            background-color: #EEEEEE;
+            padding: 0%;
+        }
+        .btn {
+            width: 335px;
+            height: 48px; 
+            background-color: #212529;
+            color: #FFFFFF;
+            text-transform: capitalize;
+          }
+      }
+    }
+    
+    } 
+  
+  @media only screen and (max-width: $medium){
+    .loginForm {
+      flex-direction: column-reverse;
+      margin: auto;
+      justify-content: center;
+      .map {
+        width: 335px;
+        height: 224px;
+        margin: auto;
+      }
+      .form {
+        width: 50%;
+        align-items: center;
+        margin: auto;
+        padding: 0%;
+        justify-content: center;
+        input {
+            max-width: 335px;
+            height: 38px; 
+            background-color: #EEEEEE;
+        }
+        .btn {
+            width: 335px;
+            height: 48px; 
+            background-color: #212529;
+            color: #FFFFFF;
+            text-transform: capitalize;
+          }
+      }
+    }
+  } 
+  @media only screen and (max-width: $large){
+    .loginForm {
+      flex-direction: column-reverse;
+      margin: auto;
+      justify-content: center;
+      .map {
+        width: 335px;
+        height: 224px;
+        margin: auto;
+      }
+      .form {
+        width: 50%;
+        align-items: center;
+        margin: auto;
+        padding: 0%;
+        justify-content: center;
+        input {
+            max-width: 335px;
+            height: 38px; 
+            background-color: #EEEEEE;
+        }
+        .btn {
+            width: 335px;
+            height: 48px; 
+            background-color: #212529;
+            color: #FFFFFF;
+            text-transform: capitalize;
+          }
+      }
+    }
+  } 
+  
+  
+ 
