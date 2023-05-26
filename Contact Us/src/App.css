@@ -1,0 +1,6 @@
+.container { 
+    margin: auto;
+    min-width: 300px; 
+    max-width: 1500px;
+    overflow-x: hidden;
+  }

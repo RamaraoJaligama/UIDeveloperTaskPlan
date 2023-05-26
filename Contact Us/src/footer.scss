@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:wght@400;700&display=swap');
+
+$Primary: #74C69D;
+$PrimaryFont:Crimson Text;
+$SeconderyFont: 'Work Sans';
+$FontSize: 20px; 
+$Color: #ffffff;
+$small:600px;
+$medium: 768px;
+$large: 998px;
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $Primary;
+    margin: 6rem 0 0 0 ;
+    .icons {
+      color: #ffffff;
+      margin: 2rem 2.5rem;
+    }
+    .fa {
+      padding: 10px 20px;
+      width: 26px;
+      height: auto;
+    }
+    p {
+      font-size: $FontSize;
+      font-family: $SeconderyFont;
+      font-weight: 400;
+      color: #ffffff;
+      margin: 2rem 2.5rem;
+      padding: 10px 20px;    
+    }
+  } 
+
+  @media only screen and (max-width: 600px){
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem  0 0 0rem;
+      .icons {
+         color: #ffffff;
+         margin: 1rem 0rem 0rem 0rem;
+      }
+      .fa {
+        padding: 5px 10px;
+        width: 26px;
+        height: auto;
+        align-items: center;
+      }
+      p {
+        margin: 1rem 0rem;
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+        font-family: $SeconderyFont;
+      }
+    } 
+  }
+
+  @media only screen and (max-width: 768px){
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem  0 0 0rem;
+      .icons {
+         color: #ffffff;
+         margin: 1rem 0rem 0rem 0rem;
+      }
+      .fa {
+        padding: 5px 10px;
+        width: 26px;
+        height: auto;
+        align-items: center;
+      }
+      p {
+        margin: 1rem 0rem;
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+        font-family: $SeconderyFont;
+      }
+    } 
+  }
+  
