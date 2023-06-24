@@ -1,0 +1,47 @@
+@import './sideNav.scss';
+@import './main.scss';
+$font-family:'Mulish', sans-serif ;
+$font-size-primary: 14px;
+
+.head {
+    background-color: #F2F8FE;
+    float: left;
+    width: 77%;
+    .top {
+        padding: 30px 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+     button {
+        background-color: #144D92;
+        color: #ffffff;
+        border-radius: 10px;
+        font-size: $font-size-primary;
+        font-weight: 700;
+        padding: 10px;
+        font-family: $font-family;
+        border: none;
+      }
+       span {
+        padding: 0 4px;
+        border-radius: 100%;
+        background: #fff;
+        margin-right: 10px;
+        text-align: center;
+        color: #144D92;
+      }
+      input {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 65%;
+        padding: 5px 36px;
+        height: 30px;
+      }
+      span.material-symbols-outlined {
+        position: absolute;
+        top: 40px;
+        background: none;
+        color: #8E8EA9;
+        padding-left: 10px;
+      }
+  }
