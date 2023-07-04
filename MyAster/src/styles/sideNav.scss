@@ -1,0 +1,125 @@
+$font-family: 'Mulish', sans-serif;
+$font-size-primary: 14px;
+$font-size-secondary: 16px;
+$font-weight-Secondary: 700;
+$font-weight-primary: 400;
+$small-text: 12px;
+
+.sidepanal {
+  width: 23%;
+  float: left;
+  background-color: #FBFDFF;
+  h4 {
+    margin: 35px 0px 0px 5px;
+    font-family: $font-family;
+    font-size: $font-size-secondary;
+    font-weight: $font-weight-Secondary;
+    text-transform: uppercase;
+  }
+
+  img {
+    margin-left: 10px;
+  }
+}
+
+.sidenav {
+  display: grid;
+
+  lable {
+    border-bottom: 1px solid #D8D8D8;
+    padding: 23px 10px;
+    font-size: $small-text;
+    font-weight: $font-weight-Secondary;
+    font-style: normal;
+    color: #78909C;
+    letter-spacing: 0.02em;
+    font-family: $font-family;
+    align-items: center;
+    text-transform: uppercase;
+    display: inline-flex;
+    cursor: pointer;
+  }
+}
+
+.sidenavIcon {
+  display: grid;
+
+  .sideLable {
+    border-bottom: 1px solid #ccc;
+    padding: 22px 5px;
+  }
+}
+
+.sideLable lable {
+  font-size: $font-size-primary;
+  font-weight: $font-weight-primary;
+  font-style: normal;
+  border: none;
+  padding: 0;
+  color: #144D92;
+  letter-spacing: 0.02em;
+  font-family: $font-family;
+  align-items: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  display: inline-flex;
+  padding: 10px 20px 10px 15px;
+    &:hover {
+      background-color: #144D92;
+      color: #fff;
+      width: 200px;
+      border-radius: 10px;
+      display: inline-flex;
+    }
+  }
+
+.sidenavIcon .sideLable:nth-child(2) lable {
+  background-color: #144D92;
+  color: #fff;
+  width: 200px;
+  padding: 10px 20px 10px 15px;
+  border-radius: 10px;
+  display: inline-flex;
+}
+
+.settings h3 {
+  font-size: $small-text;
+  font-weight: $font-weight-Secondary;
+  font-family: $font-family;
+  text-transform: uppercase;
+  color: #78909C;
+
+}
+
+.settings {
+  ul {
+    margin: auto;
+    padding: 0;
+    color: #144D92;
+  }
+
+  lable {
+    padding: 10px 20px 10px 15px;
+    list-style: none;
+    display: flex;
+    font-size: $font-size-primary;
+    font-weight: $font-weight-primary;
+    text-transform: capitalize;
+    align-items: center;
+    cursor: pointer;
+    width: 200px;
+
+    &:hover {
+      background-color: #144D92;
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 10px, 20px, 10px, 35px;
+    }
+  }
+}
+
+.settings span {
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+}

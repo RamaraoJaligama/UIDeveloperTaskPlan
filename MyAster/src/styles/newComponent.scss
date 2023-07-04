@@ -1,0 +1,118 @@
+$border-radius :10px;
+$font-family:'Mulish';
+$font-size-primary: 14px;
+.newComponent {
+    float: left;
+    width: 77%;
+
+    .topSection {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 30px;
+        background-color: #F2F8FE;
+    }
+    .newLeft {
+      display: flex;
+    }
+    .back {
+        margin-right: 15px;
+        display: flex;
+        line-height: 24px;
+        padding: 6px 10px 6px 6px;
+        align-items: center;
+        border: 1px solid rgba(235, 235, 235, 1);
+        border-radius: $border-radius;
+        background: rgba(254, 254, 254, 1);
+        font-size: $font-size-primary;
+        font-family: $font-family;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .save {
+      margin-right: 15px;
+      display: flex;
+      line-height: 24px;
+      padding: 6px 10px 6px 6px;
+        align-items: center;
+        border: 1px solid rgba(235, 235, 235, 1);
+        border-radius: $border-radius;
+        background: rgba(235, 235, 235, 1);
+        font-size: $font-size-primary;
+        font-family: $font-family;
+        font-weight: 700;;
+        color: #ccc;
+        cursor: pointer;
+    }
+
+}
+.newRight{
+button.btn {
+  line-height: 24px;
+  padding: 6px 10px 6px 6px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  text-transform: capitalize; align-items: center;
+  border: 1px solid rgba(235, 235, 235, 1);
+  border-radius: $border-radius;
+  background: rgba(254, 254, 254, 1);
+  font-size: $font-size-primary;
+  font-family: $font-family;
+  font-weight: 700;
+}
+}
+.allComponents {
+  padding: 30px 30px;
+  border-bottom: 1px solid #ccc;
+  a {
+    text-decoration: none;
+    color: #78909C;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $font-family;
+    cursor: pointer;
+    &:first-child {
+      color: #144D92;
+  }
+  &:hover {
+    color: #144D92;
+  }
+}
+
+}
+.addComponent {
+  padding: 40px 30px;
+  border-bottom: 1px solid #ccc;
+  button {
+    background-color: #144D92;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: $font-size-primary;
+    font-weight: 700;
+    padding: 10px;
+    font-family: $font-family;
+    border: none;
+    cursor: pointer;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $font-family;
+    color: rgba(50, 50, 77, 0.8);
+  }
+  p {
+    font-size: $font-size-primary;
+    font-family: $font-family;
+    font-weight: 400;
+  }
+   span {
+    padding: 0 5px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 10px;
+    text-align: center;
+    color: #144D92;
+  }
+}
+
+
