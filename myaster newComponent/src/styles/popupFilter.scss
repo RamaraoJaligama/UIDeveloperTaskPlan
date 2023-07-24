@@ -1,0 +1,140 @@
+$font-family: 'Mulish';
+$font-size-primary: 14px;
+$font-size-secondary: $font-size-secondary;
+$background-blue: #144D92;
+
+.containerBox {
+  border: 1px solid #E7E7E7;
+  width: 860px;
+  height: 352px;
+  box-sizing: border-box;
+  padding: 4px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: grid;
+  float: right;
+  grid-template-columns: auto auto auto;
+
+  .box {
+    width: 242px;
+    height: 130px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    padding: 14px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(20, 77, 146, 0.05);
+      border: 1px solid rgba(20, 77, 146, 0.7);
+    }
+    .boxView {
+      margin-left: 15px;
+    }
+    .img {
+      display: flex;
+    }
+  }
+
+  h4 {
+    margin: 8px 0 0;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: $font-size-secondary;
+    font-weight: 700;
+    font-family: 'Mulish';
+    color: $background-blue;
+  }
+
+  p {
+    color: #000000;
+    text-align: start;
+    margin: 0;
+    font-size: $font-size-primary;
+    font-weight: 400;
+    font-family: $font-family;
+    color: $background-blue;
+  }
+}
+::before ,
+::after{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+input[type="radio"]:checked::before {
+  cursor: pointer;
+}
+input[type="radio"]:checked{
+  display: block;
+  width: 20px;
+  height: auto;
+  background-color: #144D92;
+  cursor: pointer;
+  top:30%
+
+}
+
+.popUpBox {
+  .popUpHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .popUpLeft h2 {
+    font-size: 18px;
+    font-family: $font-family;
+    color: $background-blue;
+    text-transform: capitalize;
+  }
+
+  .popUpRight {
+    display: inline-block;
+    width: 50%;
+    margin-block: auto;
+  }
+
+  .PopUpInput {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 82%;
+    padding: 5px 36px;
+    height: 30px;
+  }
+
+  span.material-symbols-outlined {
+    position: absolute;
+    top: 38px;
+    background: none;
+    color: #8E8EA9;
+    padding-left: 10px;
+  }
+}
+
+.btn {
+  float: right;
+  padding: 10px 0px 0px;
+
+  Button {
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-size: $font-size-primary;
+    font-weight: 400;
+    font-family: $font-family;
+    color: #000000;
+  }
+
+  .createBtn {
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    padding: 14px;
+    background-color: #FEFEFE;
+    color: $background-blue;
+    text-transform: capitalize;
+    font-size: $font-size-primary;
+    font-family: $font-family;
+    font-weight: 700;
+
+  }
+}
